@@ -28,21 +28,31 @@ function App() {
           <div className="flex gap-4 items-center">
 
             <ul className="hidden md:flex gap-8 text-lg">
-              <li className="hover:text-cyan-400 cursor-pointer transition">
-                Home
-              </li>
 
-              <li className="hover:text-cyan-400 cursor-pointer transition">
-                About
-              </li>
+              <a href="#home">
+                <li className="hover:text-cyan-400 cursor-pointer transition">
+                  Home
+                </li>
+              </a>
 
-              <li className="hover:text-cyan-400 cursor-pointer transition">
-                Skills
-              </li>
+              <a href="#about">
+                <li className="hover:text-cyan-400 cursor-pointer transition">
+                  About
+                </li>
+              </a>
 
-              <li className="hover:text-cyan-400 cursor-pointer transition">
-                Contact
-              </li>
+              <a href="#skills">
+                <li className="hover:text-cyan-400 cursor-pointer transition">
+                  Skills
+                </li>
+              </a>
+
+              <a href="#contact">
+                <li className="hover:text-cyan-400 cursor-pointer transition">
+                  Contact
+                </li>
+              </a>
+
             </ul>
 
             <button
@@ -57,7 +67,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center text-center px-6">
+      <section id="home" className="h-screen flex flex-col justify-center items-center text-center px-6">
 
         <h2 className="text-cyan-400 text-xl mb-4 tracking-widest">
           WEB DEVELOPER
@@ -92,7 +102,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 px-6">
+      <section id="about" className="py-24 px-6">
 
         <h2 className="text-4xl font-bold text-center mb-16">
           About Me
